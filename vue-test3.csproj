@@ -5,4 +5,7 @@
     <RootNamespace>vue_test3</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+  </ItemGroup>
 </Project>

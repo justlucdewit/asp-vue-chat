@@ -11,6 +11,7 @@ namespace vue_test3.Controllers
 {
     public class HomeController : Controller
     {
+        public List<Message> messages = new List<Message>();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -32,6 +33,11 @@ namespace vue_test3.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpPost]
+        public void SendMessage(Message m){
+            messages.Add(m);
         }
     }
 }
