@@ -40,7 +40,6 @@
 
             sendMessage: function() {
                 if (this.newMessage.length <= 500 && this.newMessage !== ""){
-                    console.log(this.newMessage);
                     this.$emit("onMessage", this.newMessage);
                     this.newMessage = "";
                 }

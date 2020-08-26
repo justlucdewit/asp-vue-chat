@@ -1,14 +1,24 @@
 <template>
     <div id="feed">
         <span v-for="message of messages" v-bind:key="message">
-            <div class="nameTag">{{message.author}}</div>
+            <b v-bind:style="`color:hsl(${message.color}, 50%, 50%)`" class="messageHeader">
+                <span class="nameTag">{{message.author}}</span>
+                <h6>{{buildDate(new Date(message.date))}}</h6>
+            </b>
             <div class="messageContent">{{message.message}}</div>
+            <hr/>
         </span>
     </div>
 </template>
 
 <script>
     export default {
+        methods: {
+            buildDate: function(date){
+                return `${date.toDateString() == new Date().toDateString() ? 'today' : new Intl.DateTimeFormat('en', {year: 'numeric', month: 'short', day: '2-digit'}).format(date)} ${date.getHours() < 10 ? '0'+date.getHours() : date.getHours()}:${date.getMinutes() < 10 ? '0'+date.getMinutes() : date.getMinutes()}`;
+            }
+        },
+
         computed: {
             messages(){
                 return this.$store.getters.allMessages;
@@ -37,7 +47,12 @@
 }
 
 .messageContent {
-    margin-left: 10px;
     margin-bottom: 20px;
+}
+
+.messageHeader h6 {
+    display: inline;
+    margin-left: 20px;
+    color: gray;
 }
 </style>
