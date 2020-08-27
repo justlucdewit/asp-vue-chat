@@ -35,3 +35,9 @@
 /Users/luc/Documents/programming/vue-test3/obj/Debug/netcoreapp3.1/vue-test3.pdb
 /Users/luc/Documents/programming/vue-test3/obj/Debug/netcoreapp3.1/vue-test3.genruntimeconfig.cache
 /Users/luc/Documents/programming/vue-test3/obj/Debug/netcoreapp3.1/vue-test3.csproj.CopyComplete
+/Users/luc/Documents/programming/vue-test3/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/luc/Documents/programming/vue-test3/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/luc/Documents/programming/vue-test3/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/luc/Documents/programming/vue-test3/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/luc/Documents/programming/vue-test3/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/luc/Documents/programming/vue-test3/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
